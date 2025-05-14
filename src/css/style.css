@@ -52,7 +52,7 @@ header #texto{
   }
 
   #conteudo{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 200px;
     gap:20px;
 }
@@ -68,7 +68,7 @@ main{
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
-    background-image: linear-gradient(#04580b,#2e2c2c,#000000);
+    background-image: linear-gradient(#dce0dc,#2e2c2c,#000000);
     color:#fff;
     border-radius: 30px;
 }
@@ -78,20 +78,24 @@ main{
     margin-bottom: 10px;
 }
 
-.preco{
-    font-weight: 700;
-    margin-top: 50px;
-    color:rgb(198, 211, 211);
-    font-size: 1.7rem;
-}
-
-button{
-    background: rgb(194, 209, 204);
-    margin-top: 30px;
-    padding: 15px 45px;
-    border-radius: 20px;
+.botao{
+    background: #100020;
+    background: linear-gradient(to right, #ffffff, #572b2b);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #a75252;
     cursor: pointer;
-}
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .botao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(140, 124, 156, 0.8);
+  }
   
   #boasvindas {
     background-color: #e20000;

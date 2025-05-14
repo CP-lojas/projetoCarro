@@ -33,7 +33,7 @@ header nav ul li a:hover{
     border: 2px solid #ffffff;
 }
 header #texto{
-    color:rgb(221, 142, 142);
+    color:rgb(104, 23, 23);
 }
 .banner #image{
     width: 100%;
@@ -50,3 +50,115 @@ header #texto{
     font-size: 14px;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
   }
+
+  #conteudo{
+    display:grid;
+    grid-template-columns: 1fr 200px;
+    gap:20px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto{
+    width: 200px;
+    height: 400px; 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-image: linear-gradient(#04580b,#2e2c2c,#000000);
+    color:#fff;
+    border-radius: 30px;
+}
+.produto img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.preco{
+    font-weight: 700;
+    margin-top: 50px;
+    color:rgb(198, 211, 211);
+    font-size: 1.7rem;
+}
+
+button{
+    background: rgb(194, 209, 204);
+    margin-top: 30px;
+    padding: 15px 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+  #boasvindas {
+    background-color: #e20000;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  #main-content {
+    transition: opacity 1s ease;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #container-quiz{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz{
+    background: #CCC;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555;
+    width: 80%;
+    max-width: 600px;
+}
+
+.quiz h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(85, 85, 161)
+}
+
+#container-perguntas h2{
+    color:rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+#container-respostas{
+    margin-bottom: 20px;
+}
+#resposta{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#proximo{
+    background: rgb(0, 145, 255);
+    color:#fff;
+}

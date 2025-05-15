@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-     function mostrarResultado(){
+    function mostrarResultado(){
         containerPerguntas.classList.add('hidden');
         containerResultado.classList.remove('hidden');
         listaResultado.innerHTML='';
@@ -51,9 +51,9 @@ window.addEventListener('DOMContentLoaded', () => {
             Sua Resposta: <span>${respostas[index]}</span>`
             listaResultado.appendChild(listaItem);
         })
-     }
+    }
 
-     function nextQuestao(){
+    function nextQuestao(){
         const respostaAtual =resposta.value.trim();
         if(respostaAtual ===''){
             mensagem.textContent ="Por favor , digite sua resposta";
@@ -63,18 +63,18 @@ window.addEventListener('DOMContentLoaded', () => {
         perguntas++;
         mostrarPergunta();
 
-     }
-     function reiniciarQuiz(){
+    }
+    function reiniciarQuiz(){
         perguntas =0;
         respostas.length =0;
         containerResultado.classList.add('hidden');
         containerPerguntas.classList.remove('hidden')
         mostrarPergunta();
-     }
+    }
 
-     proximaPergunta.addEventListener('click',nextQuestao);
-     reiniciarBotao.addEventListener('click',reiniciarQuiz);
+    proximaPergunta.addEventListener('click',nextQuestao);
+    reiniciarBotao.addEventListener('click',reiniciarQuiz);
 
-     mostrarPergunta();
+    mostrarPergunta();
 
 })

@@ -72,8 +72,11 @@ header #logo{
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
 }
 
-  #conteudo{
-    display: grid;
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: 1fr 200px;
     gap:20px;
 }
@@ -92,6 +95,7 @@ main{
     background-image: linear-gradient(#dce0dc,#2e2c2c,#000000);
     color:#fff;
     border-radius: 30px;
+    justify-content: center;
 }
 .produto img{
     max-width: 100%;
@@ -113,7 +117,7 @@ main{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 2%;
     height: 100px;
-    width: 60px;
+    width: 100%;
     flex-grow: 70;
   }
 
